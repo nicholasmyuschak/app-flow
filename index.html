@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>R365: AppFlow Redesign</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AppFlow Redesign">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Nicholas Yuschak">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <style>
+        /*all styles are contained in an external style sheet*/
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h2> Nicholas Yuschak</h2>
+        </header>
+        <!--Single-page-navigation-->
+        <nav>
+            <div><a href="#empathize-nav">empathize</a>
+            </div>
+            <div><a href="#define-nav">define</a></div>
+            <div><a href="#ideate-nav">ideate</a></div>
+            <div><a href="#prototype-nav">prototype</a></div>
+        </nav>
+        <!--Main Content begins-->
+        <main>
+            <!--Parallax-->
+        </main>
+
+        <!--Project Title-->
+        <div class="title">
+            <h1>R365: RESTAURANT SCHEDULING APP GETS A FACELIFT
+                A USER EXPERIENCE CASE STUDY</h1>
+        </div>
+
+        <!--Intro-->
+        <div class="intro">
+            <h2>Introduction</h2>
+            <p>I'm a server at Capital Ale House. As it is, the job is very intellectually and physically demanding. Part of the job is being able to juggle multiple tasks at once, which can get overwhelming. Therefore, the last thing I want to be worrying about is when I need to show up for work.</p>
+            <p>R365 is a cloud-based solution to restaurant scheduling. The restaurant industry can be unpredictable at times. Consequently, management needs to be able to make swift schedule changes with short notice and communicate with employees easily. Furthermore, employees need to be able to view their schedule, communicate with their coworkers and manager/s, as well as make changes to their availablity. R365 looks to offer these services to the user in a single digital solution. However, it falls short in a couple critical areas which negatively impact the User's Experience</p>
+            <p>So, I decided to do something about it.</p>
+        </div>
+
+        <!--Picture of me-->
+        <div class="me">
+            <img class="blue-steel" src="assets/images/me.jpg">
+            <p>Hand Coded by Nicholas Yuschak</p>
+            <p>Last Updated: January 31st, 2021</p>
+        </div>
+
+        <!--The Challenge and Goal-->
+        <div class="challenge">
+            <h2>The Challenge and Goal</h2>
+            <p>As a near daily user of the R365 app, I've compiled a laundry list of frustrations with product. Not only is the interface visually unappealing, many of its features are impractical and require too much effort for the user. The predominant weakness of R365 is that important features like seeing your schedule for the week are buried in unnecessary menus and navigation.</p>
+            <p>My criticisms of the app as a regular user helped me to craft my design question for this study:</p>
+            <h3><strong>How can we improve the experience of restaurant employees using the R365 app to check their schedules?</strong></h3>
+        </div>
+        <!--Process-->
+        <div class="process">
+            <h2>The Process</h2>
+            <h3>Empathize - Define - Ideate - Prototype - Test - Iterate</h3>
+            <p>This study is an exercise in effective UX Research techniques. This sequence is a popular method in the industry to ensure the product developed is centered around user needs. For this study, I was not required to code a working prototype. Therefore, the "Test" and "Iterate" phases will not be covered.</p>
+        </div>
+        <!--Empathize Heading-->
+        <div id="empathize-nav" class="empathize-heading">
+            <h2>Empathize</h2>
+        </div>
+        <!--App Analysis-->
+        <div class="app-analysis">
+            <h3>App Analysis</h3>
+            <p>I started by making site maps of 2 of the app's two weakest User Interface designs according to the respodants of my survey. These are:
+                (1)Seeing one's schedule for the week, and (2) making changes to your availability. The purpose of this section is to obectively layout the flow of the app as it is before redesign, to serve as a point of comparison. Criticisms will be made in the "define" section of this study, and alterations will be made and explained in the "ideate" section of this study.
+
+            </p>
+        </div>
+        <div class="my-schedule-feature">
+            <h3>"My Schedule" feature</h3>
+            <p>Herein lies the first and one of the more frustrating pain points of the R365 app --viewing your schedule for the week. Having to dig through too many menus is a weakness present in many features of this app. In order to access one's schedule for the week, they must go through the following process:</p>
+            <p><strong>Step One:</strong> The User Opens up the R365 App from the home screen of their smartphone. In order to view all their shifts for the week from their homescreen, the user must scroll to the left using this menu with ellipses below it. (See Figure 1.1)
+            </p>
+            <p><strong>Step Two:</strong> If the user wants to see their schedule for the week laid out, they cannot do so from the home screen. They must click the hamburger menu in the upper lefthand corner, which will bring in a sliding menu. From there, the user can click "scheduling".(See Figure 1.2)
+            </p>
+            <p><strong>Step Three</strong>
+                The User arrives at their schedule for the week in list view. (See Figure 1.3)
+            </p>
+        </div>
+        <div class="figure-1-1">
+            <p>Figure (1.1)</p>
+            <img src="assets/images/fig-1-1.PNG">
+        </div>
+        <div class="figure-1-2">
+            <p>Figure (1.2)</p>
+            <img src="assets/images/fig-1-2.PNG">
+        </div>
+        <div class="figure-1-3">
+            <p>Figure (1.3)</p>
+            <img src="assets/images/fig-1-3.PNG">
+        </div>
+
+        <div class="my-availability-feature">
+            <h3>"My Availability" feature</h3>
+            <p>This was another area of my research which revealed users' frustrations with the app: making changes to their availability. Just like the respondants didn't having to dig through menus to see their shifts for the week, they had similar complaints about making changes to their availability. To do so, the user must go through the following process:</p>
+            <p><strong>Step One:</strong> First, the user must navigate to the same sidebar menu as shown in (Figure 1.2). Next, the User must click on their icon, to be taken to "My Profile" on the next page. (See Figure 2.1)
+            </p>
+            <p><strong>Step Two:</strong> Once the User has arrived at the "My Profile" page, they must select "Availability". (See Figure 2.2)
+            </p>
+            <p><strong>Step Three</strong> The User is finally taken to the "Availability" page. They are met with lots of buttons where they can change their availability. Next to the day of the week is a green sliding button, which allows the user to say whether or not they are available that day. If they are available all day, they can select the "all day" button. If not, they must enter their custom avaiability using the button furthest to the right.
+                (See Figure 2.3)
+            </p>
+        </div>
+        <div class="figure-2-1">
+            <p>Figure (2.1)</p>
+            <img src="assets/images/fig-2-1.PNG">
+        </div>
+        <div class="figure-2-2">
+            <p>Figure (2.2)</p>
+            <img src="assets/images/fig-2-2.PNG">
+        </div>
+        <div class="figure-2-3">
+            <p>Figure (2.3)</p>
+            <img src="assets/images/fig-2-3.jpeg">
+        </div>
+        <!--User Needs-->
+        <div class="user-needs">
+            <h3>User needs: Identifying the user and their goals</h3>
+            <p>All users of the R365 in my participant pool were restaurant employees. Employees who use the app fall into three basic categories which serve as general personifactions. Age was not a relevant variable in this study, though participants' ages ranged from 19-29, which suggests a high level of media literacy amongst the participants.</p>
+            <p>In order to understand the changes users specifically wanted, I created a google form. I sent this form to my coworkers by direct message, receiving a lot of feedback along the way. Many of them enjoyed it, because they are so frustrated with the app.</p>
+            <p>In this section, I will lay out the general findings of my survey, using them to identify pain-points of the app, expanding more in the "define" section.</p>
+            <ul>
+                <li>100% of respondants preferred to see all their shifts for the week listed out as opposed to the ellipse option in figure 1.1 </li>
+                <li>57.9% of respondants said that "seeing your shifts for the week" is the most important feature of the app/</li>
+                <li>47.4% of respondants said that making changes to your availability is the most hidden, or difficult to access feature (from the homepage)in R365. Similarly, 31.6% of respondants said putting shifts up for grabs was the most hidden, or difficult to access from the homepage. I think these two actions can be grouped together.</li>
+            </ul>
+        </div>
+
+        <!--Personas-->
+        <div class="personas-heading">
+            <h2>Personas</h2>
+        </div>
+        <div class="persona-1">
+            <img src="assets/images/persona-1.jpg">
+            <p>Persona 1: This person uses R365 everyday. This person is either a junior manager (only ocassionally manages, otherwise a normal employee), bartender, or seasoned server who works 5 days a week on average.</p>
+        </div>
+        <div class="persona-2">
+            <img src="assets/images/persona-2.jpg">
+            <p>Persona 2: This person uses R365 intermittently throughout the week. This person is either BOH Staff (Kitchen), or FOH Staff (Host, Lead Host, Server, Bartender) who works 1-3 days a week on average.</p>
+        </div>
+        <div class="persona-3">
+            <img src="assets/images/persona-3.jpg">
+            <p>Persona 3: This person uses R365 sparingly. This person is BOH or FOH staff who works once a week or less. This person is usually not in the regular schedule, and may only pick up shifts as they become available.</p>
+        </div>
+        <!--Goals-->
+        <div class="goals">
+            <h3>The goals of the users of the R365 app are as follows:</h3>
+            <ul>
+                <li> Seeing one's shifts for the week</li>
+                <li>Seeing the whole restaurant schedule for the week</li>
+                <li>Putting shifts up for grabs</li>
+                <li>Making changes to your availability</li>
+                <li>Reading announcements from management</li>
+                <li>Reading messages from co-workers.</li>
+            </ul>
+        </div>
+        <!--Define-->
+        <div id="define-nav" class="define-heading">
+            <h2>Define</h2>
+            <h4>Whether you're a daily user of R365 like Persona 1, an intermittent user like Persona 2, or an occasional user like Persona 3, my goal was to make it the easiest scheduling app you've ever used. However, you can't solve a problem unless you identify it. Thereore, I've come up with three pain points from my User Research.</h4>
+        </div>
+        <!--Pain Points-->
+        <div class="pain-1-heading">
+            <h3>Pain Point #1: Unnecessary menu navigation to see shifts for the week.</h3>
+            <p>The first pain point of R365 is accessing one's schedule for the week. As demonstrated in the App Analysis section, the user has two options: to navigate to the right hand corner and scroll through the ellipse menu to see every shift, OR dig through the sidebar menu on the left, select "scheduling," to then be taken to the week's schedule. This second option is especially cumbersome.
+            </p>
+            <p>Scrolling through the ellipse menu is sub-optimal because it's a continuous scroll function. I.e, it won't stop scrolling at your last shift for the week, it'll keep repeating as long as you keep scrolling. This makes it difficult for the user to identify when their work week begins, and where it ends.</p>
+        </div>
+        <div class="pain-1-pic">
+            <img src="assets/images/schedule-form.png">
+        </div>
+        <div class="pain-2-heading">
+            <h3>Pain Point #2: Unnecessary menu navigation to change availability.</h3>
+            <p>Another common complaint amongst the participants of my study about the R365 app is how difficult it is to make changes to ones' availability. As described using the site map (figures 2.1 - 2.3) in the empathize section, the user has to dig through the sidebar menu, being brought to three screens before they can change their availablity.</p>
+        </div>
+        <div class="pain-2-text">
+            <img src="assets/images/pain2-graph.png">
+        </div>
+        <div class="pain-3-heading">
+            <h3>Pain Point #3: There's no way to tell which shifts are up for grabs.</h3>
+            <p>I also asked respondants to give their thoughts about the app in general to see if they echoed any of my criticisms of it. As shown in the figure above, 31.6% of respondants believed that putting shifts up for grabs was one of the hardest features to access from the app. Responses to the open ended question (like this one) also expressed that criticism.</p>
+        </div>
+        <div class="pain-3-text">
+            <img src="assets/images/pain-3.png">
+        </div>
+
+        <!--Ideate-->
+        <div id="ideate-nav" class="ideate-heading">
+            <h2>Ideate</h2>
+        </div>
+        <div class="phase-1">
+            <h3>Ideation: Phase 1 - Synthesize</h3>
+            <p>I got hit with a lot of information at once during my research. However, I was able to narrow down my findings to three key changes users wanted to make to the app in order to make it more usable.</p>
+            <ul>
+                <li>List out all shifts for the week so that Users can easily see them</li>
+                <li>Make the path to changing one's availability simpler by adding a button to the homescreen</li>
+                <li>Consolidate shifts which are up for grabs in one location on the home screen so users can more easily see which are available.</li>
+            </ul>
+        </div>
+        <div class="phase-2">
+            <h3>Ideation: Phase 2 - User Flow</h3>
+            <p>There's a common denominator amongst the respondants' complaints. Many of their concerns have to do with scheduling (i.e seeing the schedule for the whole week, changing scheduling availability, and putting shifts up for grabs.</p>
+            <p>This got me thinking...why don't you just put them on the same screen to reduce clicking? I'm sure the users would use the app much more. So, in an attempt to solve all three of user complaints at once, I created a new user flow wireframe to map out my idea.</p>
+            <p class="user-flow"><img src="assets/images/user-flow.png"></p>
+        </div>
+
+        <div class="phase-3">
+            <h3>Ideation: Phase 3 - Wireframes</h3>
+            <p>Once I had a good idea
+                of how I wanted the app to operate with this new user-flow, I made a rough wireframe of what the new User Interface would look like.</p>
+            <p>This design is an attempt to actualize the synthesis phase, by putting all three things the user felt they were missing on the homepage. This solves the larger, overarching problem of having to dig through menus to perform basic functions.</p>
+            <p class="wireframe"> <img src="assets/images/wireframe.png"></p>
+
+
+        </div>
+
+        <!--Prototype-->
+        <div id="prototype-nav" class="prototype-heading">
+            <h2>Prototype</h2>
+        </div>
+        <div class="solution-1">
+            <p class="prototype"><img src="assets/images/prototype.png"></p>
+        </div>
+        <div class="solution-2"> 
+          <h2> The Solution</h2>
+            <p>Due to time constraints, we were not required to create a functional prototype for this assignment. However, this is a rough idea of what it might look like on the screen. Let's go through each pain point and how it was addressed in this new design:</p>
+            <h3>Pain Point #1: Unnecessary menu navigation to see shifts for the week.</h3>
+            <p>Solution: as I mentioned, 100% of respondants were frustrated with the ellipse menu of the previous design. Furthermore, 57.9% of respondants though viewing your shifts for the week was the most important feature of the app. Therefore, I felt it was fitting to place it at the top of the sceen in calendar-list view. Now, users can see every shift they have for the week laid out immediately. No confusion! Additionally, green and red buttons in the last column of each row have been added which will allow users to accept shifts or release them to the shift pool.</p>
+             <h3>Pain Point #2: Unnecessary menu navigation to change availability</h3>
+            <p>The Solution: changing ones' availability in R365 was simply a nightmare before this redesign, and the respondants of my study thought so too. No more digging through the side menu for three pages to change your availability. One button now takes you from the home screen straight to the availability page.</p>
+            <h3>Pain Point #3: There's no way to tell which shifts are up for grabs.</h3>
+            <p>Now a thing of the past! 31.6% of respondants complained there was no way to see which shifts were up for grabs. Just like the first two pain points, it required some menu digging. To put all the shifts up for grabs on the home screen along with everything else would cause too much clutter. Therefore, I put a "shift pool" button next to the "availability" button, which takes you to the shift pool. </p>
+            <h3>All three pain points related to one another. It just made sense to group them together in one solution.</h3>
+        </div>
+      
+           
+        
+        <!--Conclusion-->
+        <div class="conclusion-heading">
+            <h2>Conclusion</h2>
+        </div>
+        <div class="limitations">
+            <h3>Limitations/What I'd Change</h3>
+            <p>(1) I wish I could have gotten a bigger sample size (I had 19 respondants.) However, our staff is limited to only so many workers. If I were to conduct this study for an employer, I would instead reach out to the managers of all Capital Ale House stores across Virginia and ask them to distribute the survey to their employees. Instead, due to time and resource constraints, I was limited to my store in Harrisonburg. (Which brings up another limitation of the app: you can only reach out to employees/managers who work at your store, even though we have locations in Midlothian, Innsbrook, Fairfax, Fredericksburg, and Richmond!</p>
+            <p>(2) A constraint of the study about which I could not do much is conducting the study during a pandemic. In normal circumstances, I would conduct interviews in person with the app sitting in front of us so that I could see more clearly how the user interacts with the app</p>
+        </div>
+        <div class="successes">
+            <h3>Successes</h3>
+            <p>Overall, I’d say the case study was very successful. At risk of sounding boastful, I think I picked the perfect app to redesign. Because my coworkers and I interact with R365 on such a regular basis, we were all familiar with what we liked and didn’t like about the interface. This allowed me to gather a really cooperative and enthusiastic group of participants. Each of them were excited that I was conducting this redesign, echoing some variation of: “Thank goodness, that thing sucks!”</p>
+            <p>While a sample size of 18 participants has drawbacks for collecting quantitative data, I was really able to get some valuable qualitative data, especially with the interview/free-response question I posed. Their answers gave me a keen insight into their experience using the app, because their frustrations were reflected in their answers.</p>
+            <p>My participants made my job very easy. I didn’t have to think very hard to come up with pain points…my participants did that for me!</p>
+        </div>
+        <div class="closing-thoughts">
+            <h3>Closing Thoughts</h3>
+            <p>This UX Case study was a great introduction to the course. I think there’s a lot of potential in the future for further research, and for R365 to make simple changes to their UI which would placate many users frustrations.</p>
+        </div>
+        <footer>
+            <h3>yuschanm@dukes.jmu.edu</h3>
+            <h3>SMAD 308: Interactive Design II</h3>
+        </footer>
+    </div>
+    <div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
+
+    <script>
+        /* Scroll to top when arrow up clicked BEGIN */
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if (height > 100) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
+        });
+        $(document).ready(function() {
+            $("#back2Top").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow");
+                return false;
+            });
+
+        });
+        /* Scroll to top when arrow up clicked END */
+
+    </script>
+</body>
+
+</html>
